@@ -82,7 +82,6 @@ class App extends Component {
 
 		// TODO: Add Error handling for failed requests
 
-		this.setupMenus();
 	}
 
 	render() {
