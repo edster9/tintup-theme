@@ -4,6 +4,7 @@ import Header from '../../components/Header'
 import Tags from '../../components/Tags';
 import Feeds from '../../components/Feeds'
 
+// Search view for showing all the Tint feeds with the TAGS selector
 class Search extends Component {
 	constructor(props) {
 		super(props);

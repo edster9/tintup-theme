@@ -3,6 +3,7 @@ import classNames from 'classnames'
 
 /* global $ */
 
+// Feeds component responsible for rendering the array of tint feeds received from the API
 class Feeds extends Component {
 	constructor(props) {
 

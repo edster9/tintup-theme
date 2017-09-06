@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 
 /* global $ */
 
+// Tags component for dynamic rendering of all the TAGS associated with this Tint
+// the tag list is provided from the tint API
+
 class Tags extends Component {
 	constructor(props) {
 		super(props);
@@ -11,6 +14,7 @@ class Tags extends Component {
 		}
 	}
 
+	// This will clear all the tint tag filters so all the tint feeds can be shown
 	resetTags() {
 		$('.container-mix').mixItUp('filter', 'all');
 	}

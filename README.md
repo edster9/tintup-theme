@@ -4,12 +4,17 @@ This project is a test theme for the TintUp.com platform and is a created as a t
 
 I have created a theme wrapped in a small functional app in `ReactJS`
 
+Production version hosted at 
+http://tintup.positiveignition.com
+
 ## Design Concept
-The purpose of this effort is not focusing on the creation of a css base theme from scratch but rather the implementation of an existing html template and tailoring it to be used as TintUp (theme / app)
+A app that is based on a family album `Tint` created for the `Sahakian` family. The `Tint` feeds are from the `Sahakian` family `Facebook` feeds.
+
+The purpose of this effort is not focusing on the creation of a css base theme from scratch but rather the implementation of an existing 3rd party html template and (tailored / modified) to be used as TintUp (theme / app)
 
 The project leverages an existing 3rd party authored CSS base template as a starting point and after removing all the extra unused elements, it is integrated into a ReactJS front end app.
 
-The core application is designed to allow a Tint to be rendered and displayed along with all the `TAGS` associated with them and allows for filtering based on the Tint `TAGS` 
+The core application is designed to allow a `Tint` to be rendered and displayed along with all the `TAGS` associated with it and allows for filtering based on the `Tint` `TAGS` 
 
 The React app also leverages the React Router to allow for a smooth single page app design with minimum load times between navigation pages.
 

@@ -11,6 +11,8 @@ class App extends Component {
 	constructor(props) {
 		super(props);
 
+		// Capture the hash history events so the jquery mixitup plugin can be re-initiated as needed
+		// Also the menu (hamburger) button needs to be reset during a hash navigation
 		const {history} = this.props;
 		history.listen((location) => {
 
@@ -27,13 +29,14 @@ class App extends Component {
 			this.setupMenus();
 		});
 
+		// Initial empty state with no Tint feeds
 		this.state = {
 			feeds: []
 		}
 	}
 
+	// Top menu jquery logic for smooth on/off effects
 	setupMenus = () => {
-		// top menu
 		$(".cmn-toggle-switch").on("click", function(){
 			if ($(this).hasClass("active")){
 				$(this).removeClass("active");
@@ -65,6 +68,7 @@ class App extends Component {
 
 	componentDidMount() {
 
+		// Use the TintUp API to get the feeds for 'edsahakiantint1' tint and populated into React state
 		q.fcall(function () {
 			return $.ajax({
 				url: 'https://api.tintup.com/v1/feed/edsahakiantint1?api_token=3cb1269d688e515fed2ea3ff8b2ecf028b083d7f',
@@ -82,6 +86,8 @@ class App extends Component {
 	}
 
 	render() {
+		// Render all the common routes
+		// Two main navigation pages at the moment 'Home' and 'Search'
 		return (
 			<Switch>
 				<Route exact path='/' render={(props) => (

@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import Header from '../../components/Header'
 import Feeds from '../../components/Feeds'
 
+// Home view for showing all the Tint feeds without the TAGS selector
 class Home extends Component {
 	constructor(props) {
 		super(props);

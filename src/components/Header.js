@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import classNames from 'classnames'
 
+// Header component to show the top main menu items and hamburger button
 class Header extends Component {
 	constructor(props) {
 		super(props);
@@ -14,6 +15,7 @@ class Header extends Component {
 
 	}
 
+	// Active class selector for the active menu button based on the hash URL
 	classesActiveMenu(hashPath) {
 		if (window.location.hash === '#/' && hashPath === '#/search') {
 			return classNames(
